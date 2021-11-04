@@ -4,10 +4,13 @@ body {
 
 .wrap {
     text-align: center;
-    padding: 200px 0 100px;
+    padding: 130px 0 100px;
 
 }
 
+p{
+    margin: 0 !important;
+}
 
 /*폰트 스타일*/
 * {
@@ -27,12 +30,26 @@ h3{
 
 }
 
+.result-title{
+    font-size: 3rem;
+    color: #E75453;
+    margin-bottom: 40px;
+    letter-spacing: -0.05em;
+}
+
 .main-text {
     color: #2B0000;
     font-size: 1.7rem;
     letter-spacing: -0.05em;
     line-height:140%;
 
+}
+
+.result-text {
+    color: #2B0000;
+    font-size: 1.3rem;
+    letter-spacing: -0.05em;
+    line-height:140%;
 }
 
 .red-font {
@@ -49,6 +66,24 @@ h3{
 
 .intro-img {
     margin: 0 auto 50px;
+}
+
+.result-products{
+    margin-bottom: 20px;
+}
+
+.product{
+    display:inline-block;
+    height:130px;
+    width:130px;
+    border-radius:50%;
+    background-color:#D5B896;
+    margin: 0 10px 40px 0;
+}
+
+.result-content{
+    padding: 0 55px;
+    margin-bottom: 40px;
 }
 
 footer {
@@ -89,9 +124,27 @@ footer .container .row .col-sm-3{
 /*버튼 스타일*/
 .main-btn {
     margin: 0 auto;
-    padding: 23px 40px;
+    padding: 20px 40px;
     display: block;
     border-radius: 10px;
     background-color: transparent;
-    border: 3px solid #E75453;
+    border: 2px solid #E75453;
+}
+
+.result-buttons button{
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: block;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #E75453;
+}
+
+.continue-arrow{
+    margin-bottom: 50px;
+}
+
+.fa-chevron-down{
+    color: #D5B896;
+    font-size: 2rem;
 }
