@@ -15,22 +15,27 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
     <!-- include HTML 여러 개의 html을 병합해주는 스크립트-->
     <script>
@@ -71,11 +76,6 @@
 
 </head>
 <body>
-<!-- 오디오 오르골 -->
-<!--    <p>테스트 삼아 음원 넣었습니다.</p>-->
-<!--    <audio controls autoplay>-->
-<!--        <source src="../static/music/over-the-rainbow.mp4" type="audio/mp4">-->
-<!--    </audio>-->
     <div class="container">
       <div class="row">
         <div class="col-sm-3">
@@ -85,34 +85,42 @@
                 <div class="intro-img">
                     <img src="../static/images/gift-conc.png">
                 </div>
-                <h1 class="intro-title">
+                <h1 class="result-title">
                     당신의 선물유형은
                     <br>
                     "이건 나만 갖고 싶어!"
                 </h1>
-<!--                <i></i>-->
-                <div style="margin: 40px 0 60px">
-                    아이콘
+                <div class="continue-arrow">
+                    <i class="fas fa-chevron-down"></i>
                 </div>
-                <div>
-                    <div style="display:inline-block; height:130px; width:130px; border-radius:50%; background-color:#D5B896; margin: 0 5px 40px 0;">
+
+                <div class="result-products">
+                    <div class="product">
                     </div>
-                    <div style="display:inline-block; height:130px; width:130px; border-radius:50%; background-color:#D5B896; margin: 0 5px 40px 0;">
+                    <div class="product">
                     </div>
-                    <div style="display:inline-block; height:130px; width:130px; border-radius:50%; background-color:#D5B896; margin: 0 5px 40px 0;">
+                    <div class="product">
                     </div>
                 </div>
-                <div class="main-text">
-                    <h5>
+                <div class="result-content">
+                    <p class="result-text">
                         천하를 예가 남는 영락과 이상의 그들은 이상은 무엇이 가는 말이다. 든 심장은 열락의 무한한 노년에게서 이상은 무엇을 피가 주는 이것이다.
                         고행을 거친 할지라도 트고, 무엇이 이것이다. 가진 얼마나 밥을 힘있다. 능히 이것을 용기가 굳세게 가치를 이상이 것이다.
                         간에 작고 불러 오직 이상이 붙잡아 현저하게 인간의 굳세게 아니다.
-                    </h5>
+                    </p>
                 </div>
-                <div>
-                    <button class="main-btn red-font" style="display:inline">다시 하기</button>
-                    <button class="main-btn red-font" style="display:inline">공유하기</button>
-                </div>
+                    <div class="row result-buttons">
+                        <div class="col-sm-6">
+                            <button class="red-font">
+                                다시 하기
+                            </button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button class="red-font">
+                                공유하기
+                            </button>
+                        </div>
+                    </div>
                 <a href="#">
                 <div style="text-align:center; height:140px; width:140px; border-radius:50%; background-color:#F5E9DA;">
                     <img src="../static/images/fortune-main.png" style="display:block; height:100px; margin:0 auto;">

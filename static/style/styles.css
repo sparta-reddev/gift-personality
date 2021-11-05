@@ -4,39 +4,112 @@ body {
 
 .wrap {
     text-align: center;
-    padding: 200px 20px;
+    padding: 130px 0 100px;
 
 }
 
+p{
+    margin: 0 !important;
+}
 
 /*폰트 스타일*/
 * {
-    font-family: 'Jua', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 
 }
 
+h3{
+    margin: 0 !important;
+}
 
 .intro-title {
+    font-size: 4rem;
     color: #E75453;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    letter-spacing: -0.05em;
 
+}
+
+.result-title{
+    font-size: 3rem;
+    color: #E75453;
+    margin-bottom: 40px;
+    letter-spacing: -0.05em;
 }
 
 .main-text {
     color: #2B0000;
+    font-size: 1.7rem;
+    letter-spacing: -0.05em;
+    line-height:140%;
 
+}
+
+.result-text {
+    color: #2B0000;
+    font-size: 1.3rem;
+    letter-spacing: -0.05em;
+    line-height:140%;
+}
+
+.red-font {
+    color: #E75453;
+    font-size: 20px;
+}
+
+.footer-font{
+    color:#FFA3A3;
 }
 
 
 /*컨테이너 스타일*/
 
 .intro-img {
-    margin: 20px auto;
+    margin: 0 auto 50px;
+}
+
+.result-products{
+    margin-bottom: 20px;
+}
+
+.product{
+    display:inline-block;
+    height:130px;
+    width:130px;
+    border-radius:50%;
+    background-color:#D5B896;
+    margin: 0 10px 40px 0;
+}
+
+.result-content{
+    padding: 0 55px;
+    margin-bottom: 40px;
 }
 
 footer {
     background-color: #E75453;
+    flex: 0 0 auto;
+}
 
+footer .container .row .col-sm-3{
+    margin: 30px 0;
+}
+
+.icons{
+    text-align: center;
+    display: inline;
+    margin-left: 15px;
+}
+
+.icons i{
+    color: white;
+}
+
+.icons a{
+    margin-right: 8px;
+    padding: 8px 5px;
+    border-radius: 5px;
+    background-color: #FF7676;
 }
 
 
@@ -50,17 +123,28 @@ footer {
 
 /*버튼 스타일*/
 .main-btn {
-    width: 230px;
-    height: 60px;
-    margin: 30px auto;
-    padding: 10px;
+    margin: 0 auto;
+    padding: 20px 40px;
     display: block;
     border-radius: 10px;
     background-color: transparent;
     border: 2px solid #E75453;
 }
 
-.red-font {
-    color: #E75453;
-    font-size: 20px;
+.result-buttons button{
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: block;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #E75453;
+}
+
+.continue-arrow{
+    margin-bottom: 50px;
+}
+
+.fa-chevron-down{
+    color: #D5B896;
+    font-size: 2rem;
 }
