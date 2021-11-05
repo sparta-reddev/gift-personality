@@ -1,10 +1,11 @@
 body {
+    margin: 0 !important;
     background-color: #E6D2BA !important;
 }
 
 .wrap {
-    text-align: center;
-    padding: 130px 0 100px;
+    text-align: center !important;
+    padding: 130px 0 100px !important;
 
 }
 
@@ -14,33 +15,68 @@ p{
 
 /*폰트 스타일*/
 * {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif !important;
+    letter-spacing: -0.05em !important;
 
+}
+
+h1{
+    font-size: 3rem !important;
+    margin-bottom: 25px !important;
+}
+
+h2{
+    font-size: 1.3rem !important;
+    margin-bottom: 40px !important;
 }
 
 h3{
+    font-size: 1.6rem !important;
     margin: 0 !important;
 }
 
-.intro-title {
-    font-size: 4rem;
-    color: #E75453;
-    margin-bottom: 25px;
-    letter-spacing: -0.05em;
-
+.space{
+ display:inline;
+    padding: 0 150px;
 }
 
-.result-title{
+.now-question-num{
+    font-size: 2rem;
+    text-align: left;
+    display: inline;
+}
+
+.question-num{
+    font-size: 1.2rem;
+    text-align: right;
+    display: inline;
+}
+
+.question-title hr{
+    background-color:#FF7676;
+    height:1px;
+    width:400px;
+}
+
+.question-content .btn-outline-danger{
+    margin-bottom: 20px;
+}
+
+.bg-danger {
+    width: 5%;
+    aria-valuenow: 100;
+    aria-valuemin: 0;
+    aria-valuemax: 100;
+}
+
+.result-title {
     font-size: 3rem;
     color: #E75453;
     margin-bottom: 40px;
-    letter-spacing: -0.05em;
 }
 
 .main-text {
     color: #2B0000;
-    font-size: 1.7rem;
-    letter-spacing: -0.05em;
     line-height:140%;
 
 }
@@ -54,7 +90,6 @@ h3{
 
 .red-font {
     color: #E75453;
-    font-size: 20px;
 }
 
 .footer-font{
@@ -86,6 +121,8 @@ h3{
     margin-bottom: 40px;
 }
 
+
+/* 푸터 스타일*/
 footer {
     background-color: #E75453;
     flex: 0 0 auto;
@@ -93,6 +130,12 @@ footer {
 
 footer .container .row .col-sm-3{
     margin: 30px 0;
+}
+
+footer hr{
+    background-color:#FF7676;
+    margin: 0px;
+    height: 2px;
 }
 
 .icons{
@@ -124,11 +167,14 @@ footer .container .row .col-sm-3{
 /*버튼 스타일*/
 .main-btn {
     margin: 0 auto;
-    padding: 20px 40px;
     display: block;
-    border-radius: 10px;
     background-color: transparent;
     border: 2px solid #E75453;
+}
+
+.btn-outline-danger{
+    padding: 20px 30px !important;
+    border-radius: 10px !important;
 }
 
 .result-buttons button{

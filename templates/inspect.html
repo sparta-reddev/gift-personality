@@ -15,22 +15,25 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/ac6bd223a2.js" crossorigin="anonymous"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
     <!-- include HTML 여러 개의 html을 병합해주는 스크립트-->
     <script>
@@ -71,46 +74,42 @@
 
 </head>
 <body>
-<!-- 오디오 오르골 -->
-<!--    <p>테스트 삼아 음원 넣었습니다.</p>-->
-<!--    <audio controls autoplay>-->
-<!--        <source src="../static/music/over-the-rainbow.mp4" type="audio/mp4">-->
-<!--    </audio>-->
     <div class="container">
       <div class="row">
         <div class="col-sm-3">
         </div>
-        <div class="col-sm-6">
-            <div class="wrap">
-                <h1 class="intro-title", class="wrap1" style="text-align:left; display: inline">
-                    Q1 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                    <h6 class-"wrap1" style="font-size: 10px; color: #FF7676; display: inline;"> 1/20</h6>
-                </h1>
-            <hr style="background-color: #FF7676; height:1px; width:270px;">
+          <div class="col-sm-6">
+              <div class="wrap">
+                  <div class="question-title red-font">
+                      <div class="now-question-num">
+                          Q1
+                      </div>
+                      <div class="space">
+                      </div>
+                      <div class="question-num">
+                          1/20
+                      </div>
+                      <hr>
+                  </div>
+                  <div class="question-content">
+                      <h2 class="main-text">
+                          나는 누구와 보내는 게 좋을까?
+                      </h2>
+                      <button type="button" class="btn btn-outline-danger">
+                          A. 다수의 친구들과 시끌벅적하게 보낸다.
+                      </button>
+                      <button type="button" class="btn btn-outline-danger">
+                          B. 소수의 친구들과 오붓하게 보낸다.
+                      </button>
+                  </div>
 
-                <p><u>                     </u></p>
-                <h7 class="main-text">
-                    나는 누구와 보내는 게 좋을까?
-                </h7>
-                <br>
-                <style
-                ="margin: 10px;"></style>
-                </br>
-                <button type="button" class="btn btn-outline-danger">A. 다수의 친구들과 시끌벅적하게 보낸다.</button>
-                <br>
-                    <style="margin: 10px;"></style>
-                </br>
-                <button type="button" class="btn btn-outline-danger">B. 소수의 친구들과 오붓하게 보낸다.</button>
+                  <div class="progress">
+                          <div class="progress-bar bg-danger" role="progressbar">
+                          </div>
+                      </div>
+                  </div>
 
-                <br>
-                    <style ="margin: 500px;"></style>
-                </br>
-
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 5%" aria-valuenow="100"
-                         aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
+              </div>
 
         </div>
         <div class="col-sm-3">
