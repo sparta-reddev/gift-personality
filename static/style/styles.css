@@ -1,24 +1,24 @@
-body {
-    margin: 0 !important;
-    background-color: #E6D2BA !important;
-}
+* {word-break: keep-all !important;}
+
+body {background-color: #E6D2BA !important;}
 
 .wrap {
     text-align: center !important;
-    padding: 130px 0 100px !important;
-
+    padding: 100px 20px 200px; !important;
 }
 
-p{
-    margin: 0 !important;
-}
+.txt-center{text-align: center;}
+
 
 /*폰트 스타일*/
 * {
     font-family: 'Noto Sans KR', sans-serif !important;
     letter-spacing: -0.05em !important;
-
 }
+
+
+p{margin: 0 !important;}
+
 
 h1{
     font-size: 3rem !important;
@@ -35,40 +35,6 @@ h3{
     margin: 0 !important;
 }
 
-.space{
- display:inline;
-    padding: 0 150px;
-}
-
-.now-question-num{
-    font-size: 2rem;
-    text-align: left;
-    display: inline;
-}
-
-.question-num{
-    font-size: 1.2rem;
-    text-align: right;
-    display: inline;
-}
-
-.question-title hr{
-    background-color:#FF7676;
-    height:1px;
-    width:400px;
-}
-
-.question-content .btn-outline-danger{
-    margin-bottom: 20px;
-}
-
-.bg-danger {
-    width: 5%;
-    aria-valuenow: 100;
-    aria-valuemin: 0;
-    aria-valuemax: 100;
-}
-
 .result-title {
     font-size: 3rem;
     color: #E75453;
@@ -78,34 +44,18 @@ h3{
 .main-text {
     color: #2B0000;
     line-height:140%;
-
 }
 
-.result-text {
-    color: #2B0000;
-    font-size: 1.3rem;
-    letter-spacing: -0.05em;
-    line-height:140%;
-}
+.red-font {color: #E75453;}
 
-.red-font {
-    color: #E75453;
-}
-
-.footer-font{
-    color:#FFA3A3;
-}
+.footer-font{color:#FFA3A3;}
 
 
 /*컨테이너 스타일*/
 
-.intro-img {
-    margin: 0 auto 50px;
-}
+.intro-img {margin: 20px auto;}
 
-.result-products{
-    margin-bottom: 20px;
-}
+.result-products{margin-bottom: 20px;}
 
 .product{
     display:inline-block;
@@ -121,6 +71,25 @@ h3{
     margin-bottom: 40px;
 }
 
+/*이미지 스타일*/
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*버튼 스타일*/
+.main-btn {
+    width: 230px;
+    height: 60px;
+    margin: 30px auto;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #E75453;
+}
 
 /* 푸터 스타일*/
 footer {
@@ -128,9 +97,7 @@ footer {
     flex: 0 0 auto;
 }
 
-footer .container .row .col-sm-3{
-    margin: 30px 0;
-}
+footer .container .row .col-sm-3{margin: 30px 0;}
 
 footer hr{
     background-color:#FF7676;
@@ -144,53 +111,15 @@ footer hr{
     margin-left: 15px;
 }
 
+.icons a{
+    text-decoration: none;
+}
+
 .icons i{
     color: white;
-}
-
-.icons a{
-    margin-right: 8px;
-    padding: 8px 5px;
-    border-radius: 5px;
     background-color: #FF7676;
+    padding: 5px 10px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
 }
 
-
-/*이미지 스타일*/
-
-.intro-img img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-/*버튼 스타일*/
-.main-btn {
-    margin: 0 auto;
-    display: block;
-    background-color: transparent;
-    border: 2px solid #E75453;
-}
-
-.btn-outline-danger{
-    padding: 20px 30px !important;
-    border-radius: 10px !important;
-}
-
-.result-buttons button{
-    margin: 0 auto;
-    padding: 20px 40px;
-    display: block;
-    border-radius: 10px;
-    background-color: transparent;
-    border: 2px solid #E75453;
-}
-
-.continue-arrow{
-    margin-bottom: 50px;
-}
-
-.fa-chevron-down{
-    color: #D5B896;
-    font-size: 2rem;
-}
