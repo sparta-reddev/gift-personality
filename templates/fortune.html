@@ -8,24 +8,32 @@
     <meta property="og:title" content="선물별 성격유형 테스트"/>
     <meta property="og:description" content="15일 메이킹챌린지 6기 - 1조 뿕은악마"/>
     <meta property="og:image" content="{{ url_for('static', filename='images/gift-og.png') }}"/>
+
+    <!--CSS -->
+    <link rel="stylesheet" href="../static/style/result.css">
+
 </head>
 <body>
-<div class="container">
+<div class="wrap container">
     <div class="row">
         <div class="col-lg-6 offset-md-3">
-            <div class="wrap">
-                <div class="intro-img">
-                    <img src="../static/images/fortune-main.png">
-                </div>
-                <h5 class="main-text">
-                    <br>
-                    우리 포춘쿠키도 한 번 뽑아볼래요?
-                </h5>
-                <a href="fortune_result.html">
-                    <button class="main-btn red-font" style="background-color: white;">포춘쿠키 뽑아보기</button>
-                </a>
+            <div class="intro-img">
+                <img src="../static/images/fortune-main.png">
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-6 offset-md-3 txt-center">
+            <div class="main-text">
+                <h5>
+                    우리 포춘쿠키도 뽑아 볼래요?
+                </h5>
+            </div>
+            <div class="btn-wrapper">
+                <a>포춘쿠키 뽑아보기</a>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
