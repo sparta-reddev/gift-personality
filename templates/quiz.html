@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!--head.html에 공통 내용 삽입-->
+    {% include 'head.html' %}
+
+    <!-- OG 태그 -->
+    <meta property="og:title" content="선물별 성격유형 테스트"/>
+    <meta property="og:description" content="15일 메이킹챌린지 6기 - 1조 뿕은악마"/>
+    <meta property="og:image" content="{{ url_for('static', filename='images/gift-og.png') }}"/>
+
+    <!--CSS -->
+    <link rel="stylesheet" href="../static/style/quiz.css">
+
+    <!-- javascript -->
+    <script type="text/javascript" src="../static/js/quiz.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-6">
+            <div class="wrap">
+                <div class="question-title red-font">
+                    <div class="now-question-num">
+                        Q1
+                    </div>
+                    <div class="space">
+                    </div>
+                    <div class="question-num">
+                        1/20
+                    </div>
+                    <hr>
+                </div>
+                <div class="question-content">
+                    <h2 class="main-text">
+                        나는 누구와 보내는 게 좋을까?
+                    </h2>
+                    <button type="button" class="btn btn-outline-danger">
+                        A. 다수의 친구들과 시끌벅적하게 보낸다.
+                    </button>
+                    <a href="result.html">
+                        <button type="button" class="btn btn-outline-danger">
+                            B. 소수의 친구들과 오붓하게 보낸다.
+                        </button>
+                    </a>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-sm-3">
+    </div>
+</div>
+</div>
+<footer>
+    <!--footer.html에 공통 내용 삽입-->
+    {% include 'footer.html' %}
+</footer>
+<script>
+    includeHTML();
+</script>
+</body>
+</html>
