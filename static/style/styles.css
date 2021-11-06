@@ -1,17 +1,17 @@
+* {word-break: keep-all !important;}
+
 body {
-    margin: 0 !important;
     background-color: #E6D2BA !important;
 }
 
 .wrap {
     text-align: center !important;
-    padding: 130px 0 100px !important;
+    padding: 100px 20px 200px; !important;
 
 }
 
-p{
-    margin: 0 !important;
-}
+.txt-center{text-align: center;}
+
 
 /*폰트 스타일*/
 * {
@@ -19,6 +19,13 @@ p{
     letter-spacing: -0.05em !important;
 
 }
+
+
+p{
+    margin: 0 !important;
+
+}
+
 
 h1{
     font-size: 3rem !important;
