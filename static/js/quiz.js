@@ -14,6 +14,11 @@ function scrollDown() {
 }
 
 $(function(){
+    // //선택지를 눌렀을때, 스크롤 다운
+    // $('.option').click(function(e){
+    //     scrollDown();
+    // });
+
     //next_btn을 눌렀을때, 스크롤 다운
     $('.next_btn').click(function(e){
         //문항이 선택되어야 다음으로 넘어갈 수 있게 하는 스크립트
