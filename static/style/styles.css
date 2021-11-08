@@ -89,6 +89,18 @@ h3{
     border-radius: 10px;
     background-color: transparent;
     border: 2px solid #E75453;
+    transition: 0.3s;
+
+}
+.main-btn:hover {
+    cursor:pointer;
+    color: white;
+    background-color: #E75453;
+
+}
+
+.main-btn:focus{
+    outline: none;
 }
 
 /* 푸터 스타일*/

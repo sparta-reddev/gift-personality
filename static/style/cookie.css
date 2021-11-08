@@ -1,0 +1,50 @@
+#cookie-btn{
+    position: fixed;
+    right: 50%;
+    top: 180px;
+    margin-right: -720px;
+    text-align:center;
+    height:140px;
+    width:140px;
+    border-radius:50%;
+    background-color:#F5E9DA;
+}
+
+#cookie-btn > img {
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#popup-cookie{
+    display: none;
+}
+
+#popup-cookie {
+    width: 100%;
+    max-width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 2;
+    padding: 40px;
+}
+
+#popup-cookie .header .close {float: right;}
+#popup-cookie .btn-wrapper{ text-align: center;}
+
+.backon {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.close {cursor: pointer;}
+.openPopup {cursor: pointer;}
