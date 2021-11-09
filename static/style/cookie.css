@@ -1,12 +1,12 @@
-#cookie-btn{
+#cookie-btn {
     position: fixed;
-    right:5%;
+    right: 5%;
     top: 30%;
-    text-align:center;
-    height:140px;
-    width:140px;
-    border-radius:50%;
-    background-color:#F5E9DA;
+    text-align: center;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-color: #F5E9DA;
     z-index: 3;
 }
 
@@ -16,7 +16,7 @@
     margin: 0 auto;
 }
 
-#popup-cookie{
+#popup-cookie {
     display: none;
 }
 
@@ -32,8 +32,13 @@
     padding: 40px;
 }
 
-#popup-cookie .header .close {float: right;}
-#popup-cookie .btn-wrapper{ text-align: center;}
+#popup-cookie .header .close {
+    float: right;
+}
+
+#popup-cookie .btn-wrapper {
+    text-align: center;
+}
 
 .backon {
     content: "";
@@ -46,5 +51,30 @@
     z-index: 1;
 }
 
-.close {cursor: pointer;}
-.openPopup {cursor: pointer;}
+.close {
+    cursor: pointer;
+}
+
+.openPopup {
+    cursor: pointer;
+}
+
+
+/*모바일 환경에서 포춘쿠키 크기 조절*/
+@media only screen and (max-device-width: 540px) {
+    #cookie-btn {
+        right: 3%;
+        top: 60%;
+        height: 70px;
+        width: 70px;
+        padding-top: 8px;
+    }
+
+    #cookie-btn > img {
+        height: 50px;
+    }
+
+    #cookie-btn > span {
+        display: none;
+    }
+}
