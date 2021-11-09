@@ -1,13 +1,13 @@
 #cookie-btn{
     position: fixed;
     right: 50%;
-    top: 180px;
-    margin-right: -720px;
+    top: 30%;
     text-align:center;
     height:140px;
     width:140px;
     border-radius:50%;
     background-color:#F5E9DA;
+    z-index: 3;
 }
 
 #cookie-btn > img {
