@@ -41,6 +41,40 @@ body {overflow: hidden;}
     cursor: pointer;
 }
 
+.option{
+    margin: 0;
+}
+
+.option input[type="radio"]{
+  display:none;
+}
+
+.option input[type="radio"] + span{
+    display:flex;
+    align-items:center;
+    margin: 30px auto;
+    padding: 20px 50px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #E75453;
+    transition: 0.3s;
+}
+
+.option input[type="radio"] + span:hover {
+    cursor:pointer;
+    color: white;
+    background-color: #E75453;
+
+}
+
+.option input[type="radio"]:checked + span{
+  cursor:pointer;
+    color: white;
+    background-color: #E75453;
+}
+
+
+
 .btn_wrap>button {
     width: 100%;
     padding: 10px 0;
