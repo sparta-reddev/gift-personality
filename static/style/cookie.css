@@ -57,3 +57,8 @@
 
 #result-cookie .header .close {float: right;}
 #result-cookie .btn-wrapper{ text-align: center;}
+
+.cookie-content{
+    background-color: #E6D2BA;
+    padding: 30px 20px;
+}
