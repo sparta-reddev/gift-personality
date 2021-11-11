@@ -42,7 +42,7 @@
 .close {cursor: pointer;}
 .openPopup {cursor: pointer;}
 
-.cookie-content{
+#cookie-content{
     background-color: #E6D2BA;
     padding: 30px 20px;
 }
