@@ -9,32 +9,25 @@
     <meta property="og:description" content="15일 메이킹챌린지 6기 - 1조 뿕은악마"/>
     <meta property="og:image" content="{{ url_for('static', filename='images/gift-og.png') }}"/>
 
-    <!--CSS -->
-    <link rel="stylesheet" href="../static/style/result.css">
+    <title>선물별 성격유형 테스트</title>
+
+    <!-- RESULT CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/result.css') }}">
 
 </head>
 <body>
-<div class="wrap container">
-    <div class="row">
-        <div class="col-lg-6 offset-md-3">
-            <div class="intro-img">
-                <img src="../static/images/fortune-conc.png">
-            </div>
+<div class="container">
+    <div class="wrap">
+        <div class="intro-img mb-5">
+            <img src="../static/images/fortune-conc.png">
         </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-6 offset-md-3 txt-center">
-            <div class="main-text">
-                <h5>
-                    갈 길이 정말 멀다 이래서 취업은 언제 하나!?
-                </h5>
-            </div>
-            <div>
-                <div class="btn-wrapper">
-                    <a class="try-btn">다시 하기</a>
-                    <a id="save-btn">저장하기</a>
-                </div>
-            </div>
+
+        <div class="main-text mb-5">
+            <h2>갈 길이 정말 멀다 이래서 취업은 언제 하나!?</h2>
+        </div>
+        <div class="btn-wrapper row">
+            <button class="half-btn red-font" type="button" onClick="history.go(-1)">다시하기</button>
+            <button class="half-btn red-font" type="button" onClick="to_main()">메인으로</button>
         </div>
     </div>
 </div>

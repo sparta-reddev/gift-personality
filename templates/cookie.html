@@ -1,6 +1,10 @@
-<div id="cookie-btn">
-    <img src="../static/images/fortune-main.png">
-    <span class="main-text">포춘쿠키 뽑기</span>
+<div id="cookie-btn" class="row">
+    <div class="col-6">
+        <img src="{{ url_for('static', filename='images/fortune-main.png') }}">
+    </div>
+    <div class="cookie-txt col-6">
+        <h3 class="main-text">온김에 포춘쿠기 하나 뽑고 가세요</h3>
+    </div>
 </div>
 <div id="popup-cookie">
     <div class="header clearfix">
@@ -8,14 +12,14 @@
     </div>
     <div class="text-center">
         <div class="intro-img">
-            <img src="../static/images/fortune-main.png">
+            <img src="{{ url_for('static', filename='images/fortune-main.png') }}">
         </div>
-        <div class="main-text">
+        <div class="main-text mb-4">
             <h5>
                 우리 포춘쿠키도 뽑아 볼래요?
             </h5>
         </div>
-        <button class="main-btn red-font" type="button">
+        <button class="main-btn red-font" type="button" onclick="window.location.href='{{ url_for( 'fortune' ) }}';">
             포춘쿠키 뽑아보기
         </button>
     </div>

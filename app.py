@@ -1,28 +1,23 @@
-from flask import Flask, render_template,  jsonify, request, url_for
+from flask import Flask, render_template, jsonify, request, url_for
 app = Flask(__name__)
 
 from pymongo import MongoClient
-client = MongoClient('localhost', 27017)
+client = MongoClient('mongodb://test:test@localhost', 27017)
+# client = MongoClient('localhost', 27017)
 db = client.dbsparta
 
-# HTML 연결R
+# HTML 연결
 @app.route('/')
 def home():
    return render_template('index.html')
 
-@app.route('/quiz')
-def quiz():
-   return render_template('quiz.html')
+@app.route('/fortune')
+def fortune():
+   return render_template('fortune_result.html')
 
-@app.route('/result')
-def result():
-   return render_template('result.html')
-
-#data
-@app.route('/quizdata', methods=['GET'])
-def showQuiz():
-    quiz = list(db.mbtiprac.find({}, {'_id': False}))
-    return jsonify({'all_quiz':quiz})
+@app.route('/result/ESTJ')
+def ESTJ():
+   return render_template('result/ESTJ.html')
 
 # 로컬호스트:5000
 if __name__ == '__main__':

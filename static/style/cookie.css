@@ -1,27 +1,20 @@
-#cookie-btn{
-    position: fixed;
-    right: 50%;
-    top: 180px;
-    margin-right: -720px;
-    text-align:center;
-    height:140px;
-    width:140px;
-    border-radius:50%;
-    background-color:#F5E9DA;
+#cookie-btn {
+    display: table;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: #F5E9DA;
+    padding: 20px 30px;
 }
 
-#cookie-btn > img {
-    display: block;
-    height: 100px;
-    margin: 0 auto;
+#cookie-btn img {width: 200%;}
+#cookie-btn .cookie-txt {
+    display: table-cell;
+    vertical-align: middle;
 }
 
-#popup-cookie{
-    display: none;
-}
-
+#popup-cookie{display: none;}
 #popup-cookie {
-    width: 100%;
+    width: 90%;
     max-width: 550px;
     position: absolute;
     top: 50%;
