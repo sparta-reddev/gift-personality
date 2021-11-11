@@ -1,115 +1,98 @@
-* {word-break: keep-all !important;}
+/*
+기본 레이아웃
+*/
 
-body {background-color: #E6D2BA !important;}
+body {background-color: #E6D2BA;}
+
+.container {max-width: 600px;}
 
 .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
     text-align: center !important;
-    padding: 100px 20px 200px; !important;
+    padding: 100px 20px 120px;
 }
 
-.txt-center{text-align: center;}
+ul {list-style-type: none !important;}
+li {list-style: none !important;}
 
+/*
+폰트 스타일
+*/
 
-/*폰트 스타일*/
 * {
     font-family: 'Noto Sans KR', sans-serif !important;
-    letter-spacing: -0.05em !important;
+    /*letter-spacing: -0.05em !important;*/
+    word-break: keep-all;
 }
 
+p {margin: 0 !important;}
 
-p{margin: 0 !important;}
-
-
-h1{
-    font-size: 3rem !important;
-    margin-bottom: 25px !important;
-}
-
-h2{
-    font-size: 1.3rem !important;
-    margin-bottom: 40px !important;
-}
-
-h3{
+h2 {
     font-size: 1.6rem !important;
-    margin: 0 !important;
+    line-height: 1.4;
 }
 
-.result-title {
-    font-size: 3rem;
-    color: #E75453;
-    margin-bottom: 40px;
-}
-
-.main-text {
-    color: #2B0000;
-    line-height:140%;
+h3 {
+    font-size: 1.3rem !important;
+    line-height: 1.4;
 }
 
 .red-font {color: #E75453;}
+.lgRed-font{color:#FFA3A3;}
+.black-font {color: #2B0000;}
+.white-font {color: #fff;}
 
-.footer-font{color:#FFA3A3;}
+/*
+버튼 스타일
+*/
 
-
-/*컨테이너 스타일*/
-
-.intro-img {margin: 20px auto;}
-
-.result-products{margin-bottom: 20px;}
-
-.product{
-    display:inline-block;
-    height:130px;
-    width:130px;
-    border-radius:50%;
-    background-color:#D5B896;
-    margin: 0 10px 40px 0;
-}
-
-.result-content{
-    padding: 0 55px;
-    margin-bottom: 40px;
-}
-
-/*이미지 스타일*/
-
-.intro-img img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-/*버튼 스타일*/
 .main-btn {
-    width: 230px;
-    height: 60px;
-    margin: 30px auto;
-    padding: 10px;
+    width: 100%;
+    padding: 20px;
     display: block;
     border-radius: 10px;
     background-color: transparent;
     border: 2px solid #E75453;
     transition: 0.3s;
-
-}
-.main-btn:hover {
     cursor:pointer;
+}
+
+.main-btn, .half-btn:hover {
     color: white;
     background-color: #E75453;
-
 }
 
-.main-btn:focus{
-    outline: none;
+.main-btn, .half-btn:focus {outline: none;}
+
+.half-btn { /* btn-wrapper로 감싸고 쓸것*/
+    width: 49%;
+    padding: 20px;
+    display: block;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #E75453;
+    transition: 0.3s;
+    cursor:pointer;
 }
 
-/* 푸터 스타일*/
+.btn-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*
+푸터 스타일
+*/
+
 footer {
     background-color: #E75453;
-    flex: 0 0 auto;
+    padding: 30px 20px;
 }
 
-footer .container .row .col-sm-3{margin: 30px 0;}
+.follow>p, .follow>div {float:right;}
 
 footer hr{
     background-color:#FF7676;
@@ -117,15 +100,8 @@ footer hr{
     height: 2px;
 }
 
-.icons{
-    text-align: center;
-    display: inline;
-    margin-left: 15px;
-}
-
-.icons a{
-    text-decoration: none;
-}
+.icons{margin-left: 15px;}
+.icons a{text-decoration: none;}
 
 .icons i{
     color: white;
@@ -133,5 +109,36 @@ footer hr{
     padding: 5px 10px 10px;
     margin-right: 5px;
     border-radius: 5px;
+    vertical-align: baseline;
 }
 
+/*
+START section
+*/
+
+.intro-img {margin: 20px auto;}
+.intro-img img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    height: auto;
+}
+
+/*
+QUESTION section
+*/
+
+.q-num {float: left;}
+.progress-txt {
+    float: right;
+    padding-top: 22px;
+}
+
+.question .progress {
+    height: 0.3rem !important;
+    background-color: #d5b896 !important;
+    font-weight: bold;
+}
+
+.question .progress .progress-bar {background-color: #e75453 !important;}
+.question>button {font-size: 1.2rem;}

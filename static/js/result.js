@@ -18,6 +18,3 @@ $(function() {
     let url = window.location.href;
     $("meta[property='og\\:url']").attr("content", url);
 });
-
-
-// 공유하기 스크립트 : 나중에 서버에 올리고 진행할 것

@@ -1,0 +1,144 @@
+<input type="hidden" id="EI" value="0">
+<input type="hidden" id="SN" value="0">
+<input type="hidden" id="TF" value="0">
+<input type="hidden" id="JP" value="0">
+
+<script>
+    var num = 1;
+    var q = {
+        1: {
+            "title": "오늘은 나의 생일이다. 나는 누구와 보내는 게 좋을까?",
+            "type": "EI",
+            "A": "다수의 친구들과 시끌벅적하게 보낸다.",
+            "B": "소수의 친구들과 오붓하게 보낸다."
+        },
+        2: {
+            "title": "파티 장소는 어디가 좋을까?",
+            "type": "EI",
+            "A": "사람이 많은 번화가.",
+            "B": "나만 아는 프라이빗한 공간."
+        },
+        3: {
+            "title": "파티 장소로 이동 중 고등학교 동창을 발견했다.",
+            "type": "EI",
+            "A": "이름을 부르며 반갑게 인사한다. (tmi 가득) ",
+            "B": "힐끔힐끔 쳐다보지만 먼저 말걸 때까지 모른 척한다."
+        },
+        4: {
+            "title": "친구들을 파티에 초대하기로 했다. 어떻게 준비할까?",
+            "type": "SN",
+            "A": "늘 하던 방식으로 준비한다.",
+            "B": "새로운 컨셉으로 준비한다."
+        },
+        5: {
+            "title": "파티 장소로 이동하는데 어떤 길로 가볼까?",
+            "type": "SN",
+            "A": "평소 가는 길로 빠르게 간다.",
+            "B": "기분도 좋으니 오늘은 새로운 길로 가본다."
+        },
+        6: {
+            "title": "동창이 생일 파티에 오고 싶다고 한다. 나는 위치를 어떻게 설명할까?",
+            "type": "SN",
+            "A": '"현재 네 위치에서 oo은행이 보일 거야.  oo은행을 등지고 우회전하면 나오는 ㅁㅁ건물 옆 n층이야."',
+            "B": '"ㅁㅁ건물 있는데 거기 옆이야."'
+        },
+        7: {
+            "title": "누가 봐도 이상한 헤어스타일을 하고 온 친구가 어떻냐고 물어본다. 나는 어떻게 반응할까?",
+            "type": "TF",
+            "A": '"오늘 머리 좀 이상한데?"하고 솔직하게 말한다.',
+            "B": "모른척 잘 어울린다고 말한다."
+        },
+        8: {
+            "title": "파티 오는 길에 교통 사고 날 뻔 했다고 친구가 말한다.",
+            "type": "TF",
+            "A": "어떻게 사고 날 뻔 했는지 묻는다.",
+            "B": '어디 다친데는 없는지 상태 확인하고 "괜찮아?"라고 묻는다.'
+        },
+        9: {
+            "title": "친구가 컨디션이 안 좋아서 먼저 집에 가야할 것 같다고 말한다.",
+            "type": "TF",
+            "A": "서둘러 집에 가서 쉬라고 말한다.",
+            "B": "요즘 무슨 일 있는건 아닌지, 괜찮은지 묻는다."
+        },
+        10: {
+            "title": "파티 음식이 모자라진 않는지 친구가 묻는다.",
+            "type": "JP",
+            "A": "예상 인원에 맞게 준비했으니 부족하지 않을 거라고 말한다.",
+            "B": "나중에 음식 모자라면 그때 배달 시키려고 한다."
+        },
+        11: {
+            "title": "생일 파티 순서가 있는지 친구가 묻는다.",
+            "type": "JP",
+            "A": "계획이 다 짜여있다.",
+            "B": "오랜만에 만났으니 맛있게 먹고 노는 게 중요하다."
+        },
+        12: {
+            "title": "친구가 나의 생일 파티를 위해 준비한 주문했던 케이크가 배송 문제로 제시간에 도착하지 못한다고 연락 왔다며 미안하다고 한다.",
+            "type": "JP",
+            "A": "계획에 차질이 생긴 것에 기분이 상한다.",
+            "B": "어쩔 수 없다며 괜찮다고 말한다."
+        }
+    }
+
+    var result = {
+        "ISTJ": {"gift-type": "ISTJ", "keyword": "#1, #2, #3"},
+        "ISFJ": {"gift-type": "ISFJ", "keyword": "#1, #2, #3"},
+        "INFJ": {"gift-type": "INFJ", "keyword": "#1, #2, #3"},
+        "INTJ": {"gift-type": "INTJ", "keyword": "#1, #2, #3"},
+        "ISTP": {"gift-type": "ISTP", "keyword": "#1, #2, #3"},
+        "ISFP": {"gift-type": "ISFP", "keyword": "#1, #2, #3"},
+        "INFP": {"gift-type": "INFP", "keyword": "#1, #2, #3"},
+        "INTP": {"gift-type": "INTP", "keyword": "#1, #2, #3"},
+        "ESTP": {"gift-type": "ESTP", "keyword": "#1, #2, #3"},
+        "ESFP": {"gift-type": "ESFP", "keyword": "#1, #2, #3"},
+        "ENFP": {"gift-type": "ENFP", "keyword": "#1, #2, #3"},
+        "ENTP": {"gift-type": "ENTP", "keyword": "#1, #2, #3"},
+        "ESTJ": {"gift-type": "ESTJ", "keyword": "#1, #2, #3"},
+        "ESFJ": {"gift-type": "ESFJ", "keyword": "#1, #2, #3"},
+        "ENFJ": {"gift-type": "ENFJ", "keyword": "#1, #2, #3"},
+        "ENTJ": {"gift-type": "ENTJ", "keyword": "#1, #2, #3"}
+    }
+
+    function start() {
+        $(".start").hide();
+        $(".question").show();
+        next();
+    }
+
+    $("#A").click(function () {
+        var type = $("#type").val();
+        var preValue = $("#" + type).val();
+        $("#" + type).val(parseInt(preValue) + 1);
+        next();
+    });
+    $("#B").click(function () {
+        next();
+    });
+
+    function next() {
+        if (num == 13) {
+            var mbti = "";
+            ($("#EI").val() < 2) ? mbti += "I" : mbti += "E";
+            ($("#SN").val() < 2) ? mbti += "N" : mbti += "S";
+            ($("#TF").val() < 2) ? mbti += "F" : mbti += "T";
+            ($("#JP").val() < 2) ? mbti += "P" : mbti += "J";
+
+            // console.log(mbti);
+
+            // 결과 페이지 리다이렉팅
+            window.location.href = "./result/" + mbti;
+
+            // $("#gift-type").html(result[mbti]["gift-type"]);
+            // $("#keyword").html(result[mbti]["keyword"]);
+        } else {
+            $(".q-num").html('Q' + num);
+            $(".progress-txt").html(num + ' / 12');
+            $(".progress-bar").attr('style', 'width: calc(100/12*' + num + '%)');
+            $("#title").html(q[num]["title"]);
+            $("#type").val(q[num]["type"]);
+            $("#A").html(q[num]["A"]);
+            $("#B").html(q[num]["B"]);
+            num++;
+        }
+    }
+</script>

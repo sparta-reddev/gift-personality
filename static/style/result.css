@@ -1,25 +1,29 @@
-.btn-wrapper {margin: 30px auto;}
-
-.btn-wrapper>a {
-    width: 48%;
-    padding: 15px;
-    display: block;
-    border-radius: 10px;
-    background-color: transparent;
-    border: 2px solid #E75453;
-    color: #E75453 !important;
-    font-size: 20px;
-    cursor: pointer;
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center !important;
+    padding: 100px 20px 120px;
 }
 
-.try-btn {float: left;}
-#popup-btn {float: right;}
-.save-btn {float: right;}
+.gift-rcnd {
+    margin-left: -55px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gift-rcnd li {
+    width: 32%;
+    background-color: #d5b896;
+    padding: 30px 0;
+    border-radius: 10px;
+}
 
 #popup01 {display: none;}
 
 #popup01 {
-    width: 100%;
+    width: 90%;
     max-width: 550px;
     position: absolute;
     top: 50%;
@@ -32,7 +36,9 @@
 
 #popup01 .header>h3 {float: left;}
 #popup01 .header .close {float: right;}
-#popup01 .share>div {float: left;}
+.addthis_inline_share_toolbox_twfv {padding-top: 20px;}
+.at-share-btn-elements {justify-content: center;}
+.at-resp-share-element .at-share-btn {margin: 10px 15px 5px !important;}
 
 .backon {
     content: "";
@@ -44,56 +50,3 @@
     left: 0;
     z-index: 1;
 }
-
-.close {cursor: pointer;}
-.openPopup {cursor: pointer;}
-
-
-.giftimg{
-    margin-left: -17px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-
-.giftimg li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.giftimg .img_wrap {
-    width: 120px;
-    height: 120px;
-    overflow: hidden;
-    margin-bottom: 10px;
-}
-
-.giftimg .img_wrap>img {width:100%;}
-
-.fortune-wrapper>div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align:center;
-    height:140px;
-    width:140px;
-    border-radius:50%;
-    background-color:#F5E9DA;
-    cursor: pointer;
-}
-
-.share {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.share div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90px;
-}
-
-.share div img {width: 100%;}
