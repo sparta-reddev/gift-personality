@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!--head.html에 공통 내용 삽입-->
+    {% include 'head.html' %}
+
+    <!-- OG 태그 -->
+    <meta property="og:title" content="선물별 성격유형 테스트"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content="{{ url_for('static', filename='images/gift-og.png') }}"/>
+
+    <title>선물별 성격유형 테스트</title>
+
+    <!-- RESULT CSS & JS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/result.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/result.js') }}"></script>
+
+    <!-- COOKIE CSS & JS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/cookie.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/cookie.js') }}"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <div class="result">
+            <div class="intro-img mb-5">
+                <img src="{{ url_for('static', filename='images/gift-conc.png') }}">
+            </div>
+
+            <h2 class="red-font mb-2">당신의 선물 유형</h2>
+            <h1 id="gift-type" class="red-font mb-5">선물 이름</h1>
+
+            <h3 id="keyword" class="mb-3">#키워드01, #키워드02, #키워드03</h3>
+            <ul class="mb-5">
+                <li>당신은 새로운 관계를 만드는 것에 열정적인 사람이에요.</li>
+                <li>활발한 성격의 소유자로 사람들과 어울리기를 좋아해요.</li>
+                <li>매우 창의적이고 항상 웃을 거리를 찾아다녀요.</li>
+            </ul>
+
+            <h2 class="red-font mb-4">당신을 위한 선물 추천</h2>
+            <ul class="gift-rcnd row mb-5">
+                <li class="">선물1</li>
+                <li class="">선물2</li>
+                <li class="">선물3</li>
+            </ul>
+
+            <h2 class="red-font mb-2">선물 추천 이유</h2>
+            <p class="mb-5">당신은 창의적이며 새로운 것들을 탐닉하는 사람이에요. 남들과는 다른 것, 평범하지 않은 것들을 추구하는 당신에게 기성품은 시시하고 재미없죠.
+                '나만 가지고 있는 것', 서프라이즈를 즐기는 당신에게는 공산품 보다는 유니크한 선물이 좋겠네요.</p>
+        </div>
+        <div class="btn-wrapper row">
+            <button class="half-btn red-font" type="button" onClick="history.go(-1)">다시하기</button>
+            <button id="popup-btn" class="half-btn red-font" type="button">공유하기</button>
+        </div>
+        <div id="popup01">
+            <div class="header clearfix mb-2">
+                <h3>공유하기</h3>
+                <span class="close">&times;</span>
+            </div>
+            <hr>
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_inline_share_toolbox_twfv"></div>
+        </div>
+        {% include 'cookie.html' %}
+    </div>
+</div>
+<footer>
+    <!--footer.html에 공통 내용 삽입-->
+    {% include 'footer.html' %}
+</footer>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-618b7ed40fa60484"></script>
+</body>
+</html>

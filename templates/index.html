@@ -13,27 +13,29 @@
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <div class="col-lg-6 offset-md-3">
-            <div class="wrap">
-                <h1 class="red-font">선물별<br>성격유형 테스트</h1>
-                <h2 class="main-text">며칠 뒤면 나의 생일이다.<br>생일파티는 어떻게 준비하면 좋을까?</h2>
-                <div class="intro-img">
-                    <img src="../static/images/gift-main.png">
-                </div>
-                <button class="main-btn red-font" type="button"
-                        onclick="window.location.href='{{ url_for( 'quiz' ) }}';">
-                    유형 테스트 시작하기
-                </button>
+    <div class="wrap">
+        <div class="start">
+            <h1 class="red-font mb-3">선물별<br>성격유형 테스트</h1>
+            <h3 class="black-font mb-5">며칠 뒤면 나의 생일이다.<br>생일파티는 어떻게 준비하면 좋을까?</h3>
+            <div class="intro-img mb-5">
+                <img src="{{ url_for('static', filename='images/gift-main.png') }}">
             </div>
+            <button class="main-btn red-font" type="button" onclick='start();'>유형 테스트 시작하기</button>
         </div>
+
+        <div class="question" style="display: none;">
+            <!--question.html 결과 페이지-->
+            {% include 'question.html' %}
+        </div>
+
+        <!--mbti_script.html 분리-->
+        {% include 'mbti_script.html' %}
+
     </div>
-</div>
 </div>
 <footer>
     <!--footer.html에 공통 내용 삽입-->
     {% include 'footer.html' %}
 </footer>
-<script>includeHTML();</script>
 </body>
 </html>
