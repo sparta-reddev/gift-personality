@@ -1,5 +1,8 @@
 $(document).ready(function ($) {
-    $("#cookie-btn").on("click", function (event) {  //버튼 누르면
+    $(".open-cookie").on("click", function (event) {  //버튼 누르면
+        $("#result-cookie").hide();   //결과 팝업 숨기기
+        $(".backon").remove(); //뒷배경 삭제
+
         $("#popup-cookie").show();   //팝업 오픈
         $("body").append('<div class="backon"></div>'); //뒷배경
     });
@@ -24,6 +27,7 @@ $(document).ready(function ($) {
     function randomItem(a) {
         return a[Math.floor(Math.random() * a.length)]; //격언 랜덤 선택
     };
+
 
     var praise = Array(
         '지금까지 노력한 것들의 결과가 좋아요!',
