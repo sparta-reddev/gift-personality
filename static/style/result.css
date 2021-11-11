@@ -37,11 +37,7 @@
 #popup01 .header>h3 {float: left;}
 #popup01 .header .close {float: right;}
 .addthis_inline_share_toolbox_twfv {padding-top: 20px;}
-.at-share-btn-elements {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+.at-share-btn-elements {justify-content: center;}
 .at-resp-share-element .at-share-btn {margin: 10px 15px 5px !important;}
 
 .backon {
