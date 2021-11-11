@@ -41,3 +41,19 @@
 
 .close {cursor: pointer;}
 .openPopup {cursor: pointer;}
+
+#result-cookie{display: none;}
+#result-cookie {
+    width: 90%;
+    max-width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 2;
+    padding: 40px;
+}
+
+#result-cookie .header .close {float: right;}
+#result-cookie .btn-wrapper{ text-align: center;}

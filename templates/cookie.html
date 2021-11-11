@@ -19,7 +19,25 @@
                 우리 포춘쿠키도 뽑아 볼래요?
             </h5>
         </div>
-        <button class="main-btn red-font" type="button" onclick="window.location.href='{{ url_for( 'fortune' ) }}';">
+        <button id="get-cookie" class="main-btn red-font" type="button">
+            포춘쿠키 뽑아보기
+        </button>
+    </div>
+</div>
+<div id="result-cookie" style="display: none">
+    <div class="header clearfix">
+        <span class="close">&times;</span>
+    </div>
+    <div class="text-center">
+        <div class="intro-img">
+            <img src="{{ url_for('static', filename='images/fortune-main.png') }}">
+        </div>
+        <div class="main-text mb-4">
+            <h5>
+                결과창
+            </h5>
+        </div>
+        <button class="main-btn red-font" type="button">
             포춘쿠키 뽑아보기
         </button>
     </div>
